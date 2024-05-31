@@ -1,0 +1,2 @@
+# InitalPythonLearningItems
+First python learnings
