@@ -30,14 +30,31 @@ import random
 gamer_decison = input("Type rock, paper, pr scissors choice: \n")
 gamer_decison = gamer_decison.lower()
 # Computer decision
-gametypes = ["rock", "paper", "scissors"]
+gametypes = [rock, paper, scissors]
 computer_decis = random.randint(0,2)
-if computer_decis == 0:
+if gamer_decison == "rock":
+    print("Gamer Decision: \n")
     print(rock)
-elif computer_decis == 1:
+    print("\n")  
+elif gamer_decison == "paper":
+    print("Gamer Decision: \n")
     print(paper)
+    print("\n")  
+elif gamer_decison == "scissors":
+    print("Gamer Decision: \n")
+    print(scissors)   
+    print("\n")     
+    
+
+if computer_decis == 0:
+    print("Computer Decision: \n")
+    print(gametypes[0])
+elif computer_decis == 1:
+    print("Computer Decision: \n")
+    print(gametypes[1])
 elif computer_decis == 2:
-    print(scissors)        
+    print("Computer Decision: \n")
+    print(gametypes[2])     
 if computer_decis == 0 and gamer_decison == "rock":
     print("Both rocks, draw!")  
 elif computer_decis == 0 and gamer_decison == "paper":
